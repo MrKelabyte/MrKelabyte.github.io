@@ -1,32 +1,127 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
+        <!--<link href="styles/style.css" rel="stylesheet" /> -->
+
         <!--Font Information-->
-        <link href="styles/style.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
         <title>Kellen Madigan Portfolio</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script defer src="scripts/main.js"></script>
     </head>
     
     <body>
-        <h1>Kellen Madigan</h1>
-        <img class="headshot" src="images/headshots/kel-nel.jpg" alt="Kellen Madigan's Headshot: a white male with short brown hair and blue eyes"/>
-
-        <a href="https://www.linkedin.com/in/kellen-madigan" target="_blank"><img class="contact-logo1" src="images/app_icons/linkedin.png" alt="Kellen's LinkedIn Profile"/></a>
-        <a href="https://bsky.app/profile/d3adb0lt-d.bsky.social" target="_blank"><img class="contact-logo" src="images/app_icons/bluesky.png" alt="Kellen's Bluesky Profile"/></a>
-        <a href="https://github.com/d3adb0lt" target="_blank"><img class="contact-logo" src="images/app_icons/github.png" alt="Kellen's GitHub Profile"/></a>    
-        <p>Hello! I am a Computer Science graduate from GaTech with interest in:</p>
-        <ul>
-            <li>Game Development & Design</li>
-            <li>Software Engineering</li>
-            <li>AI Engineering</li>
-        </ul>
-        <p>Please, have a look at my CS journey thus far!</p>
+        <header id="home">
+            <h1>Kellen Madigan</h1>
+            <img class="headshot" src="assets/images/headshots/kel-nel.jpg" alt="Kellen Madigan's Headshot: a white male with short brown hair and blue eyes holding a black and white tuxedo cat">
+            <p>Hello, my name is Kellen Madigan. I am a Video Game Developer/Designer, Software Developer and AI Engineer. Please have a look at my CS journey thus far!</p>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#handheld-device">Handheld Device</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>            
+        </nav>
+        <main>
+            <section id="projects">
+                <h2>Projects</h2>
+                <!--Game Design Projects-->
+                    <article data-tags="game software">
+                        <h3>Quinn Signer</h3>
+                        <ul class="tags">
+                            <li>Game Development &amp; Design</li>
+                            <li>Software Engineering</li>
+                        </ul>
+                        <p>ASL learning mobile game made under the Sign Game Labs studio.</p>
+                        <ul class="project-links">
+                            <li><a href="https://ccg.gatech.edu/index.php?title=Quinn_Signer">Contextual Computing Group Quinn Signer wiki page</a></li>
+                            <li><a href="https://github.com/d3adb0lt/quinn-signer">Quinn Signer source code(GitHub)</a></li>
+                        </ul>
+                    </article>
+                    <article data-tags="game software">
+                        <h3>Hands of Valor</h3>
+                        <ul class="tags"><li>Game Development &amp; Design</li><li>Software Engineering</li></ul>
+                        <p>ASL learning mobile game made under the Sign Game Labs studio.</p>
+                        <ul class="project-links">
+                            <li><a href="https://ccg.gatech.edu/index.php?title=Hands_of_Valor">Contextual Computing Group Hands of Valor wiki page</a></li>
+                            <li><a href="https://github.com/d3adb0lt/hands-of-valor">Hands of Valor source code(GitHub)</a></li>
+                        </ul>
+                    </article>
+                    <article data-tags="game software">
+                        <h3>Deafinitely Delicious</h3>
+                        <ul class="tags"><li>Game Development &amp; Design</li><li>Software Engineering</li></ul>
+                        <p>ASL learning mobile game made under the Sign Game Labs studio.</p>
+                        <ul class="project-links">
+                            <li><a href="https://ccg.gatech.edu/index.php?title=Deafinitely_Delicious">Contextual Computing Group Deafinitely Delicious wiki page</a></li>
+                            <li><a href="https://github.com/d3adb0lt/deafinitely-delicious">Definitely Delicious source code(GitHub)</a></li>
+                        </ul>
+                    </article>
+                    <article data-tags="game software">
+                        <h3>The Night Watch</h3>
+                        <ul class="tags"><li>Game Development &amp; Design</li><li>Software Engineering</li></ul>
+                        <p>
+                            GaTech project from CS4455, where a videogame was made using Unity3D.
+                            My group worked to create a souls-like with an isometric perspective.
+                        </p>
+                        <ul class="project-links">
+                            <li><a href="https://github.com/d3adb0lt/the-night-watch">The Night Watch source code(GitHub)</a></li>
+                        </ul>
+                    </article>
+                    <!--Software Development Projects-->
+                    <article data-tags="software">
+                        <h3>LC-2200 Recreation in CircuitSim</h3>
+                        <ul class="tags"><li>Software Engineering</li></ul>
+                        <p>GaTech project from CS2200.</p>
+                    </article>
+                    <!--AI Development Projects-->
+                    <article data-tags="ai">
+                        <h3>Machine Learning Project</h3>
+                        <ul class="tags"><li>AI Engineering</li></ul>
+                        <p>
+                            GaTech project from CS3600, where models were trained on public datasets.
+                            My group worked to better the training in multiple ways and test on a variety of factors.
+                        </p>
+                    </article>
+                    <article data-tags="ai">
+                        <h3>Deep Learning Project</h3>
+                        <ul class="tags"><li>AI Engineering</li></ul>
+                        <p>
+                            GaTech project from CS4644, where models were trained on public datasets to aid in identifying bleached coral for the purposes of environment preservation.
+                            My group worked to create a final paper summarizing our results and their potential impact.
+                        </p>
+                    </article>
+            </section>
+            <section id="handheld-device">
+                <h2>Handheld Device</h2>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                    <address>
+                            <p>Email: <a href="mailto:kmadigan3@gatech.edu">kmadigan3@gatech.edu</a></p>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/kellen-madigan" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://bsky.app/profile/d3adb0lt-d.bsky.social" target="_blank">Bluesky</a></li>
+                                <li><a href="https://github.com/d3adb0lt" target="_blank">GitHub</a></li>
+                            </ul>
+                    </address>
+                    <p>
+                        <a href="assets/documents/resume-incomplete.pdf" target="_blank" rel="noopener noreferrer">View Resume (PDF)</a>
+                        <br>
+                        <a href="assets/documents/resume-incomplete.pdf" download="Kellen-Madigan-Resume.pdf">Download Resume (PDF)</a>
+                    </p>
+            </section>
+        </main>
+        <footer>
+            <a href="https://www.linkedin.com/in/kellen-madigan" target="_blank"><img class="contact-logo1" src="assets/images/app_icons/linkedin.png" alt="Kellen's LinkedIn Profile"></a>
+            <a href="https://bsky.app/profile/d3adb0lt-d.bsky.social" target="_blank"><img class="contact-logo" src="assets/images/app_icons/bluesky.png" alt="Kellen's Bluesky Profile"></a>
+            <a href="https://github.com/d3adb0lt" target="_blank"><img class="contact-logo" src="assets/images/app_icons/github.png" alt="Kellen's GitHub Profile"></a>
+        </footer>
     </body>
 </html>
