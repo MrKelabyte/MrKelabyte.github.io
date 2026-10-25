@@ -1,0 +1,71 @@
+:root {
+    --body-width:   600px;
+
+    /*****COLORS*****/
+    --background:   #280d89;
+    /*cards and panels sitting on background*/
+    --surface:      #ffd700;
+    --text:         #FFFFFF;
+    /*dates, tags, captions*/
+    --muted-text:   grey;
+    /*hyperlinks and highlights*/
+    --color-accent: red;
+    --border:       green;
+
+    /*****FONT SIZES*****/
+    --text-sm:      0.6rem;
+    --text-base:    1.0rem;
+    --text-lg:      1.2rem;
+    --text-xl:      1.4rem;
+    --text-2xl:     1.6rem;
+}
+html {
+    font-family: "Jacquarda Bastarda 9", serif;
+    background-color: var(--background);
+}
+h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #0231ee;
+    text-shadow: 3px 3px 1px black;
+}
+p,
+li {
+    font-size: 20px;
+    font-family: "Playfair", serif;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+body {
+    width: var(--body-width);
+    height: 700px;
+    font-family: "Playfair", serif;
+    margin: 0 auto;
+    background-color: #daa520;
+    padding: 0 20px 20px 20px;
+    border: 4px solid black;
+    border-radius: 25%;
+}
+.headshot {
+    display: block;
+    margin: auto;
+    border: 2px solid gold;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 45%;
+    border-radius: 50%;
+}
+.contact-logo1 {
+    margin: 10px 42.5px 5px 185px;
+    width: calc(var(--body-width) * .075);
+    height: calc(var(--body-width) * .075);
+}
+.contact-logo {
+    margin: 10px 42.5px 5px 0px;
+    width: calc(var(--body-width) * .075);
+    height: calc(var(--body-width) * .075);
+}
