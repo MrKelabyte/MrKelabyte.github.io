@@ -42,6 +42,11 @@ body {
     font-family: "Playfair", serif;
     line-height: 1.5;
 }
+.wrapped-up {
+    max-width: 70ch;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
 :any-link {
     color: var(--color-accent);
 }
