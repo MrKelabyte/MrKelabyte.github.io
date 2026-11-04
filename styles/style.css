@@ -1,5 +1,4 @@
 :root {
-    --body-width:       600px;
     --color-bg:         #0d2b45;
     --color-surface:    #203c56;
     --color-text:       #ffecd6;
@@ -42,10 +41,28 @@ body {
     font-family: "Playfair", serif;
     line-height: 1.5;
 }
+footer {
+    padding-block: 2rem 1rem;
+}
 .wrapped-up {
     max-width: 70ch;
     margin-inline: auto;
     padding-inline: 1.5rem;
+}
+.intro {
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 3.0rem;
+}
+.tags {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
 }
 :any-link {
     color: var(--color-accent);
@@ -60,13 +77,12 @@ body {
     object-position: center 45%;
     border-radius: 50%;
 }
-.contact-logo1 {
-    margin: 10px 42.5px 5px 185px;
-    width: calc(var(--body-width) * .075);
-    height: calc(var(--body-width) * .075);
+.footer-element {
+    width: 3rem;
+    height: 3rem;
 }
-.contact-logo {
-    margin: 10px 42.5px 5px 0px;
-    width: calc(var(--body-width) * .075);
-    height: calc(var(--body-width) * .075);
+.nav-elements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
