@@ -15,7 +15,7 @@
     --text-xl:      2.00rem;
     --text-2xl:     3.00rem;
 }
-#handheld-device {
+#handheld {
     --color-pixel-off:  #112318;
     --color-pixel-on:   #bedc7f;
     /* will add other colors here for device body, buttons, etc. */
@@ -122,7 +122,7 @@ footer {
     list-style: none;
     padding: 0;
 }
-.tags > li{
+.tags > li {
     font-size: var(--text-sm);
     padding: 0.2em 0.75em;
     border: 1px solid var(--color-muted);
